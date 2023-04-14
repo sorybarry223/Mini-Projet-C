@@ -1,4 +1,5 @@
 #include "Datee.h"
+#include <stdio.h>
 
 void date_ouverture(Date *la_date){
      int jmax;
@@ -32,5 +33,5 @@ do
 {
     printf("\ndonner une annee\n");
      scanf("%d",&(la_date->annee));
-}while(la_date->annee!=2020);                // controle sur l'année//
+}while(la_date->annee!=2020);                // controle sur l'annï¿½e//
 }

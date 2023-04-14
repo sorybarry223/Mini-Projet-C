@@ -1,13 +1,13 @@
-#include <stdio.h>
+/*#include <stdio.h>
 #include <stdlib.h>
 #include "structures_compte.h"
-#include "Datee.h
+#include "Datee.h"
 
 int sauvegarde_banque(compte *premier)
 {
     FILE *fic;
     compte *ptr=premier;
-    // ouverture du fichier pour l'écriture
+    // ouverture du fichier pour l'ï¿½criture
     fic= fopen("banque.txt", "w");
     if(fic==NULL)
     {
@@ -17,7 +17,7 @@ int sauvegarde_banque(compte *premier)
     // ecriture du compte dans le fichier
     while(ptr != NULL)
     {
-        fwrite(ptr, sizeof(compte), 1, outfile);
+        fwrite(ptr, sizeof(compte), 1, fic);
         ptr=ptr->suivant;
     }
     if(fwrite !=0)
@@ -27,3 +27,4 @@ int sauvegarde_banque(compte *premier)
     fclose(fic);
     return 0;
 }
+*/

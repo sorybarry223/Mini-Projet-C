@@ -2,22 +2,22 @@
 #include "stdio.h"
 #include "structures_compte.h"
 #include <string.h>
-
+#include <time.h>
 /* ajout d'un nouveau compte */
 
 /* ***********************************/
-void saisie_CIN(compte *le_compte)               //fonction de donnée du CIN//
+void saisie_CIN(compte *le_compte)               //fonction de donnï¿½e du CIN//
 {
     int num;
 do
 {
-    printf("\ndonner votre CIN ou N° passeport pour les etrangers:\n");
+    printf("\ndonner votre CIN ou Nï¿½ passeport pour les etrangers:\n");
     scanf("%d",&num);
 }while(num<0);
 le_compte->CIN=num;
 }
 /* ******************************/
-void saisie_num_registre(compte *le_compte)   //donnée du num de registre pour les entreprises//
+void saisie_num_registre(compte *le_compte)   //donnï¿½e du num de registre pour les entreprises//
 {
     int num_registre;
   do
@@ -61,8 +61,8 @@ strcpy(le_compte->mot_de_passe,mdp);
 void saisie_du_nom(compte *le_compte)     //fonction saisie du nom//
 {
 printf("\ndonnez votre nom :\n");
-fgetc(stdin); // permet de lire  des caracteres dans le buffer mais pas l'entrée standard (cad\n) et les retourne
-fgets(le_compte->nom,50,stdin); //les val retournées sont lises au clavier sont mises dans le compte
+fgetc(stdin); // permet de lire  des caracteres dans le buffer mais pas l'entrï¿½e standard (cad\n) et les retourne
+fgets(le_compte->nom,50,stdin); //les val retournï¿½es sont lises au clavier sont mises dans le compte
 }
 /* **************************************/
 void saisie_du_nom_entreprise(compte *le_compte)     //fonction saisie du nom de l'entreprise//
